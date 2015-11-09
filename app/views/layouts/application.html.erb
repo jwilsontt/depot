@@ -12,7 +12,11 @@
 		<%= @page_title || "Pragmatic Bookshelf" %>
 	</div>
 	<div id="columns">
-		<div ="side">
+		<div id="side">
+			<div id="cart">
+				<%= render @cart %>
+			</div>
+			
 			<ul>
 				<li><a href="www....">Home</a></li>
 				<li><a href="www..../faq">Questions</a></li>
