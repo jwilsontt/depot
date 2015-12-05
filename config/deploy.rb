@@ -2,6 +2,7 @@
 lock '3.4.0'
 
 # Change these
+server '172.16.154.132', port: 22, roles: [:web, :app, :db], primary: true
 
 
 set :repo_url,        'git@github.com:jwilsontt/depot.git'
