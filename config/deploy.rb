@@ -78,6 +78,12 @@ namespace :deploy do
     end
   end
 
+  desc 'Load seed data'
+  task :seed do
+    deploy.migrations
+    run "cd #{current_path}; rake db:seed RAILS_ENV=#{rails_env}"
+  end
+
   before :starting,     :check_revision
   after  :finishing,    :compile_assets
   after  :finishing,    :cleanup
@@ -86,4 +92,4 @@ end
 
 # ps aux | grep puma    # Get puma pid
 # kill -s SIGUSR2 pid   # Restart puma
-# kill -s SIGTERM pid   # Stop puma
+# kill -s SIGTERM pid   # Stop pumaq
