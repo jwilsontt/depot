@@ -58,4 +58,6 @@ end
 
 gem 'puma'
 
+gem 'yaml_db'
+
 gem 'dotenv-rails', :groups => [:development, :test, :production]
