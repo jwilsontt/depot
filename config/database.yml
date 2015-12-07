@@ -30,3 +30,4 @@ production:
   username: root
   password: deployadm1n
   host: localhost
+  socket: /run/mysqld/mysqld.sock
