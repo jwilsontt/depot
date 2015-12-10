@@ -28,5 +28,6 @@ production:
   database: depot_production
   pool: 5
   username: root
-  password: n0saj1
+  password: deployadm1n
   host: localhost
+  socket: /run/mysqld/mysqld.sock
