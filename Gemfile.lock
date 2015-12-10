@@ -93,10 +93,9 @@ GEM
     mini_portile (0.6.2)
     minitest (5.8.2)
     multi_json (1.11.2)
-<<<<<<< HEAD
-=======
+
     mysql (2.9.1)
->>>>>>> 094a1fd3fbe46425064d89fae4dc161d952a0898
+
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (3.0.1)
@@ -188,10 +187,9 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   jquery-ui-rails
-<<<<<<< HEAD
-=======
+
   mysql
->>>>>>> 094a1fd3fbe46425064d89fae4dc161d952a0898
+
   puma
   rails (= 4.2.4)
   sass-rails (~> 5.0)
