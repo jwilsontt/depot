@@ -56,7 +56,7 @@ group :development do
 end
 
 group :production do
-  gem 'ruby-mysql'
+  gem 'mysql'
 end
 
 gem 'puma'
