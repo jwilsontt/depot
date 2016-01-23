@@ -4,21 +4,21 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 #
-# default: &default
-#   adapter: sqlite3
-#   pool: 5
-#   timeout: 5000
-
-development:
-  adapter: mysql
+default: &default
+  adapter: mysql2
   encoding: utf8
-  reconnect: false
-  database: depot_production
   pool: 5
   username: root
-  password: deployadm1n
-  host: localhost
-  socket: /run/mysqld/mysqld.sock
+  password: n0ch@nce.
+  socket: /tmp/mysql.sock
+
+development:
+  <<: *default
+  database: depot_development
+
+test:
+  <<: *default
+  database: depot_test
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -39,13 +39,13 @@ development:
 #   host: localhost
 #   socket: /run/mysqld/mysqld.sock
 
-staging:
-  adapter: mysql
-  encoding: utf8
-  reconnect: false
-  database: depot_production
-  pool: 5
-  username: root
-  password: deployadm1n
-  host: localhost
-  socket: /run/mysqld/mysqld.sock
+# staging:
+#   adapter: mysql
+#   encoding: utf8
+#   reconnect: false
+#   database: depot_production
+#   pool: 5
+#   username: root
+#   password: deployadm1n
+#   host: localhost
+#   socket: /run/mysqld/mysqld.sock

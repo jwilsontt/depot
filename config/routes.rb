@@ -27,6 +27,7 @@ Rails.application.routes.draw do
    root 'store#index', as: 'store', via: :all 
   end
 
+  resources :transactions, only: [:new, :create]
   # resources :products
 
 

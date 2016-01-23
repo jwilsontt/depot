@@ -20,3 +20,6 @@ config/database.yml
 =======
 
 /.env.local
+
+# Ignore application configuration
+/config/application.yml

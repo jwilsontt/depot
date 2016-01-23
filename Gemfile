@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'sqlite3' 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -47,21 +47,33 @@ group :development do
   gem 'spring'
 
 
-  gem 'capistrano', 		require: false
-  gem 'capistrano-rvm', 	require: false
-  gem 'capistrano-rails', 	require: false
-  gem 'capistrano-bundler', require: false
-  gem 'capistrano3-puma', 	require: false
+  # gem 'capistrano', 		require: false
+  # gem 'capistrano-rvm', 	require: false
+  # gem 'capistrano-rails', 	require: false
+  # gem 'capistrano-bundler', require: false
+  # gem 'capistrano3-puma', 	require: false
 
 end
 
-group :production do
-  gem 'mysql'
-end
+# group :production do
+#   gem 'mysql2', '~> 0.3.13'
+# end
 
-gem 'puma'
+# gem 'puma'
 
-gem 'yaml_db'
+# gem 'yaml_db'
 
-gem 'dotenv-rails', :groups => [:development, :test, :production]
+# gem 'dotenv-rails', :groups => [:development, :test, :production]
+
+gem 'mysql2', '~> 0.3.13'
+
+gem 'activemerchant'
+
+gem 'haml'
+
+gem 'kaminari'
+gem 'braintree'
+gem 'figaro'
+gem 'gon', '~> 5.1.2'
+
 
